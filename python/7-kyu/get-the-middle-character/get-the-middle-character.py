@@ -1,9 +1,2 @@
 def get_middle(s):
-    x = len(s) % 2
-    y = len(s)//2
-    l = y-1
-    m = y+1
-    if x == 0:
-        return s[l:m]
-    else:
-        return s[y]
+    return (s[len(s)//2 - 1:len(s)//2 + 1]) if len(s) % 2 == 0 else (s[len(s)//2:len(s)//2 + 1])
